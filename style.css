@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    --main-text-color: #D9F0FF;
+    --background-colour:#7681B3;
+    font-family: system-ui;
+}
+
+html{
+    background-image: url(./assets/main-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main Grid Display */
+
+.main-grid{
+    display: grid;
+    border: thin solid red;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* SIDEBAR CSS --------------------------------*/
+
+.sidebar{
+    grid-row: span 4;
+    /* Background for side bar */
+    background-color: var(--background-colour);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar > .icon{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.sidebar > h3{
+    display: flex;
+    align-items: center;
+}
+
+
+/* SIDEBAR CSS END ---------------------*/
+.search-bar{
+    grid-column: span 3;
+}
+
+.announce {
+    grid-column-start: 4;
+}
+.trending{
+    grid-column-start: 4;
+}
+
+.projects{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 5;
+}
+/* 
+
+4 Columns - Climb up and down
+
+4 Rows - Row across the sea
+
+
+*/
+
+/*  */
