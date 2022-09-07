@@ -15,7 +15,7 @@
                 <path d="M19.5 3h-15A1.5 1.5 0 0 0 3 4.5v15A1.5 1.5 0 0 0 4.5 21h15a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 3Z"></path>
               </svg>Dashboard</h3>
             <div class="icon">
-                <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"></path>
                     <path d="M9.5 14.5V21h5v-6.5h-5Z"></path>
                     <path d="M4.5 21h15"></path>
@@ -56,17 +56,15 @@
             </div>
             <div class="icon">
                 <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 12h12"></path>
-                    <path d="M10 19h12"></path>
-                    <path d="M10 5h12"></path>
-                    <path d="M6 17H2v4h4v-4Z"></path>
-                    <path d="M6 10H2v4h4v-4Z"></path>
-                    <path d="M6 3H2v4h4V3Z"></path>
+                    <path d="M18.844 7.875c-.138 1.906-1.552 3.375-3.094 3.375-1.542 0-2.959-1.468-3.094-3.375-.14-1.983 1.236-3.375 3.094-3.375 1.858 0 3.235 1.428 3.094 3.375Z"></path>
+                    <path d="M15.75 14.25c-3.055 0-5.993 1.517-6.729 4.472-.097.391.148.778.55.778h12.358c.402 0 .646-.387.55-.778-.736-3.002-3.674-4.472-6.73-4.472Z"></path>
+                    <path d="M9.375 8.716c-.11 1.522-1.253 2.722-2.484 2.722-1.232 0-2.377-1.2-2.485-2.722C4.294 7.132 5.406 6 6.891 6c1.484 0 2.596 1.161 2.484 2.716Z"></path>
+                    <path d="M9.657 14.341c-.846-.387-1.778-.536-2.766-.536-2.437 0-4.786 1.211-5.374 3.572-.077.312.118.62.44.62h5.262"></path>
                   </svg>
                   Communities
 
             </div>
-            <div class="icon">
+            <div class="icon settings-button">
                 <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2 9 5H5v4l-3 3 3 3v4h4l3 3 3-3h4v-4l3-3-3-3V5h-4l-3-3Z"></path>
                     <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
@@ -93,7 +91,42 @@
 
         <!-- Search bar at very top of grid -->
         <div class="search-bar">
-            .search-bar
+            <div class="search-top-bar">
+                <div class="search-bar-container">
+                    <svg width="46" height="46" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m21.75 20.063-5.816-5.818a7.523 7.523 0 0 0 1.44-4.433c0-4.17-3.393-7.562-7.562-7.562-4.17 0-7.562 3.392-7.562 7.562s3.392 7.562 7.562 7.562a7.523 7.523 0 0 0 4.433-1.44l5.818 5.816 1.687-1.688ZM9.812 14.986a5.174 5.174 0 1 1-.002-10.35 5.174 5.174 0 0 1 0 10.349Z"></path>
+                      </svg>
+                      <input type="text">
+                </div>
+                
+
+                  <div class="user-profile">
+                    <!-- Noti Bell -->
+                    <svg width="46" height="46" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22.5a3.754 3.754 0 0 0 3.436-2.25H8.564A3.754 3.754 0 0 0 12 22.5Z"></path>
+                        <path d="M18.75 13.5v-2.837c0-3.304-1.282-6.181-4.5-6.913l-.375-2.25h-3.75L9.75 3.75c-3.229.732-4.5 3.598-4.5 6.913V13.5L3 16.5v2.25h18V16.5l-2.25-3Z"></path>
+                      </svg>
+                      <!-- User Profile pic -->
+                      <img src="./assets/profile-image.jpg" alt="User Profile" id="profile-image">
+                  </div>
+            </div>
+
+            <div class="greeting-container">
+                <div class="hi-there">
+                    <img src="./assets/profile-image.jpg" alt="User Profile" id="profile-image">
+                    <div class="group-text">
+                        <span>Hi There,</span>
+                        <br>
+                        <span>Lego man (@legoman)</span>
+                    </div>
+                        
+                </div>
+                <div class="greeting-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>        
+            </div>
 
         </div>
 

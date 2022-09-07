@@ -9,51 +9,141 @@
     --background-colour:#7681B3;
     font-family: system-ui;
 }
-
-html{
-    background-image: url(./assets/main-background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
+    margin: 0px;
+    padding: 0px;
 }
-
 /* Main Grid Display */
 
 .main-grid{
     display: grid;
-    border: thin solid red;
     width: 100vw;
     height: 100vh;
     /* background-color: aqua; */
     gap:10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 300px 1fr 1fr 400px;
 }
 
 
 /* SIDEBAR CSS --------------------------------*/
 
+/* Search Bar Style*/
+
+
+.search-top-bar{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    margin-top: 20px;
+}
+
+#profile-image{
+    width: auto;
+    border-radius: 100px;
+    height: 75px;
+}
+.search-bar-container{
+    padding-left: 50px;
+    gap: 20px;
+}
+.search-bar-container > input{
+    width: 80%;
+    gap: 20px;
+    background-color: #adadad64;
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.search-bar-container > input:focus{
+    outline: none;
+    padding-left: 10px;
+}
+
+.user-profile,.search-bar-container{
+    display: flex;
+    align-items: center;
+}
+.user-profile{
+    gap: 30px;
+    margin-left: 20px;
+}
+
+
+
+/* Search bar style */
+
 .sidebar{
     grid-row: span 4;
     /* Background for side bar */
-    background-color: var(--background-colour);
+    background-color: #43389e;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sidebar > svg{
+    height: 40%;
+    width: 40%;
 }
 
 .sidebar > .icon{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    border-radius: 3px;    
 }
+
+.icon:hover{
+    cursor: pointer;
+    transition: cubic-bezier(1, 0, 0, 1);
+    background-color: #adadad64;    
+}
+
 .sidebar > h3{
     display: flex;
     align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.settings-button{
+    margin-top: 3em;
+}
+
+.greeting-container{
+    display: grid;
+    grid-template-columns: 1fr 425px;
+    margin-top: 20px;
+}
+
+.hi-there{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.group-text{
+    display: inline-block;
+}
+
+.greeting-buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.greeting-buttons > button{
+    padding: 5px 25px 5px 25px;
 }
 
 
 /* SIDEBAR CSS END ---------------------*/
+
+
 .search-bar{
     grid-column: span 3;
 }
