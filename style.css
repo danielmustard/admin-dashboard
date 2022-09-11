@@ -13,6 +13,10 @@ body{
     margin: 0px;
     padding: 0px;
 }
+h6{
+    padding: 0px;
+    margin: 0px;
+}
 /* Main Grid Display */
 
 .main-grid{
@@ -148,11 +152,10 @@ body{
     grid-column: span 3;
 }
 
-.announce {
-    grid-column-start: 4;
-}
-.trending{
-    grid-column-start: 4;
+.announce-trending{
+    grid-template-rows: 1fr 1fr;
+    grid-row: span 3;
+    display: grid;
 }
 
 .projects{
@@ -161,13 +164,39 @@ body{
     grid-column-end: 4;
     grid-row-end: 5;
 }
-/* 
 
-4 Columns - Climb up and down
+/* Projects CSS */
 
-4 Rows - Row across the sea
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;    
+}
+
+.info{
+    padding: 40px;
+    border-left: darkgoldenrod 10px solid;
+    border-radius: 10px;
+}
+
+.trending-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 10px;
+}
+
+.content-pp{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
 
-*/
 
-/*  */
+
+
+/* PROJECTS CSS END
+ */
