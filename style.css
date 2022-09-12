@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     --main-text-color: #D9F0FF;
     --background-colour:#7681B3;
     font-family: system-ui;
@@ -153,7 +153,7 @@ h6{
 }
 
 .announce-trending{
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 300px 300px;
     grid-row: span 3;
     display: grid;
 }
@@ -180,7 +180,6 @@ h6{
 }
 
 .trending-inner{
-    height: 100%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -192,6 +191,30 @@ h6{
     display: flex;
     align-items: center;
     gap: 30px;
+}
+.greeting-buttons > button {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.greeting-buttons > button:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.greeting-buttons > button:active {
+	position:relative;
+	top:1px;
 }
 
 
